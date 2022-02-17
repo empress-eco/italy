@@ -245,7 +245,7 @@ def sales_invoice_validate(doc):
 				frappe.throw(_("Please set Tax ID for the customer '%s'" % doc.customer), title=_("E-Invoicing Information Missing"))
 
 	if not doc.customer_address:
-	 	frappe.throw(_("Please set the Customer Address"), title=_("E-Invoicing Information Missing"))
+		frappe.throw(_("Please set the Customer Address"), title=_("E-Invoicing Information Missing"))
 	else:
 		validate_address(doc.customer_address)
 
