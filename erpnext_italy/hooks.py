@@ -68,6 +68,9 @@ app_license = "MIT"
 # before_install = "erpnext_italy.install.before_install"
 # after_install = "erpnext_italy.install.after_install"
 
+after_install = "erpnext_italy.install.after_install"
+
+
 # Uninstallation
 # ------------
 
@@ -111,6 +114,22 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+
+doc_events = {
+	"Sales Invoice": {
+		"on_submit": [
+			"erpnext_italy.utils.sales_invoice_on_submit",
+		],
+		"on_cancel": [
+			"erpnext_italy.utils.sales_invoice_on_cancel",
+		]
+	},
+	'Address': {
+		'validate': [
+			'erpnext_italy.utils.set_state_code',
+		],
+	},
+}
 
 # Scheduled Tasks
 # ---------------
@@ -188,3 +207,9 @@ app_license = "MIT"
 # 	"erpnext_italy.auth.validate"
 # ]
 
+regional_overrides = {
+	'Italy': {
+		'erpnext.controllers.taxes_and_totals.update_itemised_tax_data': 'erpnext_italy.utils.update_itemised_tax_data',
+		'erpnext.controllers.accounts_controller.validate_regional': 'erpnext_italy.utils.sales_invoice_validate',
+	}
+}
