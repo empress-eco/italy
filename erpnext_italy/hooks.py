@@ -36,6 +36,10 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {
+	"Sales Invoice": "public/js/sales_invoice.js"
+}
+
 # Home Pages
 # ----------
 
@@ -117,18 +121,12 @@ after_install = "erpnext_italy.install.after_install"
 
 doc_events = {
 	"Sales Invoice": {
-		"on_submit": [
-			"erpnext_italy.utils.sales_invoice_on_submit",
-		],
-		"on_cancel": [
-			"erpnext_italy.utils.sales_invoice_on_cancel",
-		]
+		"on_submit": "erpnext_italy.utils.sales_invoice_on_submit",
+		"on_cancel": "erpnext_italy.utils.sales_invoice_on_cancel",
 	},
 	'Address': {
-		'validate': [
-			'erpnext_italy.utils.set_state_code',
-		],
-	},
+		'validate': 'erpnext_italy.utils.set_state_code',
+	}
 }
 
 # Scheduled Tasks

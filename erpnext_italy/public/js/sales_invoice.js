@@ -23,3 +23,5 @@ erpnext.setup_e_invoice_button = (doctype) => {
 		}
 	});
 };
+
+erpnext.setup_e_invoice_button('Sales Invoice')

@@ -1,3 +1,5 @@
+__version__ = '0.0.1'
+
 fiscal_regimes = [
     "RF01-Ordinario",
     "RF02-Contribuenti minimi (art.1, c.96-117, L. 244/07)",
