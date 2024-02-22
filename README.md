@@ -1,12 +1,12 @@
 <div align="center">
-![Empress Italy Logo](https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png
-</div>
+<img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Logo" width="80" height="80">
+
 
 Welcome to Empress Italy, your ultimate solution for regional customization of ERP software, specifically tailored for Italian businesses. Our application streamlines your invoice generation and supplier data management, offering an enhanced user experience.
 
-- [Explore the App](https://empress.eco/)
-- [Report a Bug](https://github.com/empress-eco/italy/issues)
-- [Request a Feature](https://github.com/empress-eco/italy/issues)
+ [Explore the App](https://empress.eco/) |  [Report a Bug](https://github.com/empress-eco/italy/issues) | [Request a Feature](https://github.com/empress-eco/italy/issues)
+
+</div>
 
 ## About The Project
 
